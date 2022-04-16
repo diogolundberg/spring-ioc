@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -21,5 +22,6 @@ class CityServiceTest {
         when(repository.findAll()).thenReturn(cities);
 
         assertIterableEquals(cities, cityService.list());
+        assertTrue(false);
     }
 }
